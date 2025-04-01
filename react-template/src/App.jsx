@@ -1,17 +1,17 @@
-import { useState } from 'react'
+
 import './App.css'
 import { Template } from './components/Template'
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { theme } from './theme/theme';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
-    <ThemeProvider theme={createTheme}>
-      <Template />
-      <h1>Test</h1>
+    <ThemeProvider theme={theme}>
+      <CssBaseline enableColorScheme />
+        <h1>Containerised Vite Template</h1>
+        <Template />
     </ThemeProvider>
     </div>
 
