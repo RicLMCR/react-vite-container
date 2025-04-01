@@ -1,0 +1,13 @@
+services:
+  react-template:
+    build: ./react-template
+    container_name: reacttemplate_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+
+# COMMANDS
+# docker compose down
+# docker compose build
+# docker compose up
