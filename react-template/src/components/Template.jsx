@@ -6,7 +6,6 @@ export const Template = () => {
     return ( 
         <>
         <Switch />
-        <Button>Test</Button>
         </>
      );
 }

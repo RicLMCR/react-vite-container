@@ -8,9 +8,13 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <ThemeProvider theme={theme}>
+    <div>
+    <ThemeProvider theme={createTheme}>
       <Template />
+      <h1>Test</h1>
     </ThemeProvider>
+    </div>
+
   )
 }
 
